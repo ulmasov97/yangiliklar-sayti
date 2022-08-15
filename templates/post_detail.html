@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block contend %}
+
+
+
+<div class="content-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card aos-init aos-animate" data-aos="fade-up">
+                <div class="card-body">
+                  <div class="aboutus-wrapper">
+                    <h1 class="mt-5">
+                    </h1><h1>{{ yangilik.title }}</h1>
+                    
+                    <p class="font-weight-600 fs-15">
+                      {{ yangilik.body }}
+                    </p>
+                    <br>
+                    <img src="{{ yangilik.image.url }}" alt="banner" class="img-fluid mb-5">
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+{% endblock contend %}
